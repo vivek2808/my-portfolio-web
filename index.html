@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="title">
+            <h1 style="font-family: 'serif'; color: red;">My Portfolio</h1>
+            <div class="nav-links">
+                <a onclick="scrollToSection('about-me')">About Me</a>
+                <a onclick="scrollToSection('skills')">Skills</a>
+                <a onclick="scrollToSection('projects')">Projects</a>
+                <a onclick="scrollToSection('hobbies')">Hobbies & Interests</a>
+                <a onclick="scrollToSection('contact')">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about-me" class="section">
+        <div class="about-me-content">
+            <div class="profile-section">
+                <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
+            </div>
+            <div class="text-section">
+                <h2 style="font-family: 'serif'; color: red;">About Me</h2>
+                <p style="font-size: 16px; color: white; font-family: 'serif';">
+                    Hi, I'm Vivek, born and raised in Visakhapatnam. I I possess strength in design and integration, along with a natural ability to solve problems. Additionally, I am proficient in SQL, JavaScript, Python, and Java. I am enthusiastic about initiating and implementing new projects. Capacity to convert business needs into technological solutions
+                </p>
+                
+                <div class="sub-sections">
+                <div class="sub-sectionsbutton">
+                    <button id=" education-button" onclick="scrollToSubSection('education')">Education</button>
+                    <button  id = "experience-button" onclick="scrollToSubSection('experience')">Experience</button>
+                </div class="sub-sectionsbutton">
+                </div>
+                
+                <div class="sub-sections-container">>
+                <div id="education" class="sub-section">
+                    <h3 style="font-family: 'serif'; color: red;">Education</h3>
+                    <p style="font-size: 16px; color: white; font-family: 'serif';">
+                        I have done my schooling in Sri Chaitanya techno school with 9.5 CGPA, then I did my plus 12
+                        from Narayana junior college with 85%, and now I'm pursuing my B.Tech from Gitam University
+                        with 8.5 CGPA.
+                    </p>
+                </div>
+                <div id="experience" class="sub-section">
+                    <h3 style="font-family: 'serif'; color: red;">Experience</h3>
+                    <p style="font-size: 16px; color: white; font-family: 'serif';">
+                        I worked as an Analyst in product management during my 2-month internship at Phoenix Global (Hyderabad)
+                        Cooperated with project partners to develop system analysis and new system design based on client specifications.
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="skills" class="section">
+        <h2 style="font-family: 'serif'; color: red;">Skills</h2>
+        <ul>
+            <li style="font-size: 16px; color: white; font-family: 'serif';">Python Programming</li>
+            <li style="font-size: 16px; color: white; font-family: 'serif';">JAVA (Intermediate)</li>
+            <li style="font-size: 16px; color: white; font-family: 'serif';">Machine Learning</li>
+            <li style="font-size: 16px; color: white; font-family: 'serif';">Front-end Technology</li>
+            <li style="font-size: 16px; color: white; font-family: 'serif';">Database Management</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 style="font-family: 'serif'; color: red;">Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3 style="font-family: 'serif'; color: red;">Giftsy</h3>
+                <p style="font-size: 16px; color: white; font-family: 'serif';">
+                    Giftsy is a customized gifts delivery website developed using HTML, CSS, and JS. It provides a
+                    unique and personalized experience for users looking to send special gifts to their loved ones.
+                </p>
+                <a href="#" style="font-size: 16px; color: white; font-family: 'serif';">View Project</a>
+            </div>
+            <div class="project">
+                <h3 style="font-family: 'serif'; color: red;">Movie Recommendations</h3>
+                <p style="font-size: 16px; color: white; font-family: 'serif';">
+                    The Movie Recommendations project utilizes machine learning with Python to suggest similar movies
+                    based on cosine similarity. It enhances the user's movie-watching experience by providing
+                    tailored recommendations.
+                </p>
+                <a href="https://github.com/vivek2808/Movie-Recommendation" target="_blank"><style="font-size: 16px; color: white; font-family: 'serif';">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies" class="section">
+        <h2 style="font-family: 'serif'; color: red;">Hobbies & Interests</h2>
+        <p style="font-size: 16px; color: white; font-family: 'serif';">
+            In addition to coding, I have a variety of hobbies and interests. Whether it's exploring new technologies,
+            reading books, or playing musical instruments, I always find joy in learning and creating. Science and
+            sports are my primary interests, and I enjoy playing the piano and singing.
+        </p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 style="font-family: 'serif'; color: red;">Contact</h2>
+        <p style="font-size: 16px; color: white; font-family: 'serif';">
+            Feel free to reach out to me through the following channels:
+        </p>
+        <ul style="font-size: 16px; color: white; font-family: 'serif';">
+            <li>Email: vivekyuvi2830@gmail.com</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/vivek-bombathula-b7ab38250/"
+                    target="_blank">LinkedIn Profile</a></li>
+            <li>GitHub: <a href="https://github.com/vivek2808" target="_blank">GitHub Profile</a></li>
+            <li>Instagram: <a href="https://www.instagram.com/vivekyuvi_/"
+                    target="_blank">Instagram Profile</a></li>
+        </ul>
+        
+        <div class="social-icons">
+            <a href="www.linkedin.com/in/vivek-bombathula-b7ab38250" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/vivekyuvi_/" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+
+    
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        function toggleSubSection(subSectionId) {
+            const subSection = document.getElementById(subSectionId);
+            subSection.style.display = subSection.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

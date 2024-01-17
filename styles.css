@@ -1,0 +1,281 @@
+body {
+    font-family: 'Merienda', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: red;
+}
+
+header {
+    background-color: #4c1414;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+p {
+    font-family: 'Merienda', cursive;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.nav-links::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s ease;
+}
+
+.nav-links a {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.section {
+    padding: 60px;
+    
+    font-size: 18px;
+    background-color: rgb(0, 2, 14);
+    
+    
+    position: relative;
+    text-align: center;
+}
+
+h2 {
+    color: red;
+    border-bottom: 2px solid rgb(53, 8, 8);
+    padding-bottom: 10px;
+    font-family: 'Merienda', cursive;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    
+    font-family: 'Merienda', cursive;
+
+
+}
+
+#about-me a,
+#skills a,
+#projects a,
+#hobbies a,
+#contact a {
+    text-decoration: none;
+}
+/* ... (Previous styles) */
+
+.project a {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: rgb(31, 9, 9);
+    color: #d40a0a;
+    outline: none;
+    border: 1px solid #c21212;
+    border-radius: 3px;
+    font-family: 'Merienda', cursive;
+    font-size: 18px;
+    text-decoration: none; /* Remove default link underline */
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.project a:focus,
+.project a:hover {
+    background-color: rgb(20, 3, 3);
+    color: #721414;
+    border: 1px solid #000;
+}
+
+/* ... (Remaining styles) */
+
+
+a:hover {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    flex-basis: 20%;
+    margin-bottom: 20px;
+    width: 150px; /* Added */
+    border: 2px solid red; /* Added */
+    padding: 50px; /* Added */
+    margin: 125px; /* Added */
+}
+
+
+.profile-section {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 20px;
+}
+
+.profile-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+#contact a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#contact a:hover {
+    background-color: #555;
+}
+
+.sub-sections button {
+    padding: 10px 20px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    background-color: rgb(49, 27, 27);
+    color: #ac2424;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-family: 'Merienda', cursive;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.sub-sections button:focus,
+.sub-sections button:hover {
+    background-color: white;
+    color: #000;
+    border: 1px solid #000;
+}
+.sub-sections-container {
+    display: flex;
+    margin: 20px 0 40px;
+    gap: 50px; /* Adjust the gap between containers */
+    justify-content: center;
+    font-family: 'Merienda', cursive;
+}
+
+#education,
+#experience {
+    flex-basis: 48%; /* Adjust the flex-basis for each sub-section */
+    margin-top: 20px;
+    justify-content: space-around;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    border: 2px solid red; /* Added border */
+    padding: 50px; /* Added padding */
+}
+
+#experience {
+    margin-left: auto; /* Push the "Experience" sub-section to the right */
+}
+
+
+.sub-section {
+    flex-basis: 100%;
+    font-family: 'Merienda', cursive;
+    
+    margin-top: 20px;
+    justify-content: space-around;
+
+    display: flex;
+    margin: 20px 0 40px;
+    justify-content: center;
+    flex-wrap: wrap; /* Added to allow items to wrap to the next line */
+    gap: 1px; /* Added to provide spacing between items */
+
+    
+    margin-bottom: 20px;
+    width: 150px; /* Added */
+    border: 2px solid red; /* Added */
+    padding: 50px; /* Added */
+    margin: 125px; /* Added */
+
+
+.sub-sections button:hover + .sub-section, /* Display the sub-section when button is hovered */
+.sub-section:hover {
+    display: flex;
+}
+
+.sub-section h3 {
+    color: #000;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    font-family: 'Merienda', cursive;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.social-icons i {
+    margin-right: 5px;
+    font-size: 20px;
+    color: #000;
+}
+
+.down-arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.down-arrow i {
+    font-size: 24px;
+    color: white;
+}
